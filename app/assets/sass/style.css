@@ -1,0 +1,283 @@
+.date-modal .date-input {
+  width: 100%;
+  padding: 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out;
+  box-sizing: border-box;
+  border: none;
+  color: gray;
+}
+.date-modal .date-input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+.date-modal .bordered-dateinput {
+  border: 1px solid gray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 4px;
+  padding-left: 12px !important;
+}
+
+.modal .modal-content .modal-body .calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.modal .modal-content .modal-body .calendar-header button {
+  background: #f0f0f0;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.modal .modal-content .modal-body .calendar-header button svg {
+  color: green;
+}
+.modal .modal-content .modal-body .calendar-header button:hover {
+  background: #ddd;
+}
+.modal .modal-content .modal-body .calendar-header .month-year {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+.modal .modal-content .modal-body .calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.6rem !important;
+  text-align: center;
+}
+.modal .modal-content .modal-body .calendar-grid .day {
+  font-weight: bold;
+  color: #888;
+}
+.modal .modal-content .modal-body .calendar-grid .date {
+  padding: 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.modal .modal-content .modal-body .calendar-grid .date.disabled {
+  color: #aaa;
+  position: relative;
+}
+.modal .modal-content .modal-body .calendar-grid .date.disabled::after {
+  content: "_";
+  position: absolute;
+  left: 17px;
+  height: 66px;
+  font-size: 32px;
+  top: -15px;
+  font-weight: 200;
+  color: orange;
+}
+.modal .modal-content .modal-body .calendar-grid .date:hover {
+  background: #4caf50;
+  color: white;
+}
+.modal .modal-content .modal-body .calendar-grid .date.active {
+  background: #4caf50;
+  color: white;
+}
+.modal .modal-content .modal-body .calendar-grid .empty-cell {
+  visibility: hidden;
+}
+.modal .modal-content .modal-body .modal-footer {
+  border-top: 1px solid #f0f0f0;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.modal .modal-content .modal-body .modal-footer .btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.modal .modal-content .modal-body .modal-footer .btn:hover {
+  background-color: #45a049;
+}
+.modal .modal-content .modal-body .modal-footer .btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.5);
+}
+.modal .modal-content .modal-body .modal-footer .btn-secondary {
+  background-color: #f0f0f0;
+  color: #333;
+}
+.modal .modal-content .modal-body .modal-footer .btn-secondary:hover {
+  background-color: #ddd;
+}
+@media (max-width: 768px) {
+  .modal .modal-content .modal-body .date-picker-dropdown {
+    padding: 0.5rem;
+  }
+  .modal .modal-content .modal-body .calendar-header button {
+    padding: 0.4rem 0.8rem;
+  }
+  .modal .modal-content .modal-body .calendar-header .month-year {
+    font-size: 1rem;
+  }
+  .modal .modal-content .modal-body .calendar-grid {
+    gap: 0.3rem;
+  }
+  .modal .modal-content .modal-body .calendar-grid .date {
+    padding: 0.4rem;
+  }
+  .modal .modal-content .modal-body .modal-content {
+    padding: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .modal .modal-content .modal-body .calendar-grid {
+    gap: 0.3rem;
+  }
+  .modal .modal-content .modal-body .calendar-grid .date {
+    padding: 0.4rem;
+  }
+  .modal .modal-content .modal-body .calendar-grid .date.disabled {
+    color: #aaa;
+    position: relative;
+  }
+  .modal .modal-content .modal-body .calendar-grid .date.disabled::after {
+    content: "_";
+    position: absolute;
+    left: 8px;
+    height: 66px;
+    font-size: 32px;
+    top: -18px;
+    font-weight: 200;
+    color: orange;
+  }
+}
+
+.options-wrapper {
+  position: relative;
+  border: 1px solid gray;
+  padding: 10px 0px 10px 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+  background: #f0f0f0;
+}
+.options-wrapper .option-top-text {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 18px;
+  margin-left: 35px;
+}
+.options-wrapper .option-main-text {
+  color: gray;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.options-wrapper .option-main-text .option-text-internal {
+  margin-left: 12px;
+}
+.options-wrapper .options {
+  color: gray;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 8px 4px 5px 2px rgba(0, 0, 0, 0.2901960784), -4px -4px 5px 2px rgba(0, 0, 0, 0.3019607843);
+  width: 100%;
+  top: 50px;
+  z-index: 9999;
+  left: 0px;
+}
+.options-wrapper .options .option-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.options-wrapper .options .option-item .option-counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.options-wrapper .options .option-item .option-counter .option-counter-number {
+  width: 30px;
+  text-align: center;
+}
+.options-wrapper .options .option-item .option-counter .option-counter-button {
+  height: 35px;
+  width: 35px;
+  color: white;
+  background: #4caf50;
+  border: 2px solid green !important;
+  cursor: pointer;
+  border-radius: 50% !important;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.options-wrapper .options .option-item .option-counter .option-counter-button:disabled {
+  cursor: not-allowed;
+}
+.options-wrapper .search-button {
+  padding: 10px 14px;
+  color: black;
+  background-color: lightgray;
+  border-radius: 12px;
+  border: none;
+}
+
+/* Light backdrop for DateModal */
+.date-modal-open .modal-backdrop.show {
+  background: red !important;
+  opacity: 0.9;
+}
+
+/* Dark backdrop for PicModal */
+.pic-modal-open .modal-backdrop.show {
+  background: green !important;
+  opacity: 0.9;
+}
+
+.custom-date-picker .react-datepicker__tab-loop .react-datepicker__tab-loop__start .custom-datepicker-popper .react-datepicker .react-datepicker__month-container .react-datepicker__month .react-datepicker__week .react-datepicker__day {
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50% !important;
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background: transparent !important;
+  color: blue !important;
+  border: 2px solid blue !important;
+  transition: background 0.3s ease !important;
+}
+.custom-date-picker .react-datepicker__tab-loop .react-datepicker__tab-loop__start .custom-datepicker-popper .react-datepicker .react-datepicker__month-container .react-datepicker__month .react-datepicker__week .react-datepicker__day:hover {
+  background: blue;
+  color: white;
+}
+.custom-date-picker .react-datepicker__tab-loop .react-datepicker__tab-loop__start .custom-datepicker-popper .react-datepicker .react-datepicker__month-container .react-datepicker__month .react-datepicker__week .react-datepicker__day--selected {
+  background: blue;
+  color: white;
+  border: 2px solid blue;
+}
+.custom-date-picker .react-datepicker__tab-loop .react-datepicker__tab-loop__start .custom-datepicker-popper .react-datepicker .react-datepicker__month-container .react-datepicker__month .react-datepicker__week .react-datepicker__day--selected:hover {
+  background: darkblue;
+}
+.custom-date-picker .react-datepicker__tab-loop .react-datepicker__tab-loop__start .custom-datepicker-popper .react-datepicker .react-datepicker__month-container .react-datepicker__month .react-datepicker__week .react-datepicker__day--today {
+  border: 2px solid red;
+  color: red;
+}
+.custom-date-picker .react-datepicker__tab-loop .react-datepicker__tab-loop__start .custom-datepicker-popper .react-datepicker .react-datepicker__month-container .react-datepicker__month .react-datepicker__week .react-datepicker__day--weekend {
+  background-color: lightgray;
+}
+.custom-date-picker .react-datepicker__tab-loop .react-datepicker__tab-loop__start .custom-datepicker-popper .react-datepicker .react-datepicker__month-container .react-datepicker__month .react-datepicker__week .react-datepicker__day--outside-month {
+  color: lightgray;
+}/*# sourceMappingURL=style.css.map */

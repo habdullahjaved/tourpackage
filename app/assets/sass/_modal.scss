@@ -1,0 +1,16 @@
+// /* Default Bootstrap modal backdrop */
+// .modal-backdrop.show {
+//    background: rgba(0, 0, 0, 0.5) !important;
+// }
+
+/* Light backdrop for DateModal */
+.date-modal-open .modal-backdrop.show {
+   background: red !important;
+   opacity: 0.9;
+}
+
+/* Dark backdrop for PicModal */
+.pic-modal-open .modal-backdrop.show {
+   background: green !important;
+   opacity: 0.9;
+}

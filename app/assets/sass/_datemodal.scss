@@ -1,0 +1,211 @@
+.date-modal {
+   .date-input {
+      width: 100%;
+      padding: 4px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: border-color 0.3s ease-in-out;
+      box-sizing: border-box;
+      border: none;
+      color: gray;
+
+      &:focus {
+         outline: none;
+         border-color: #4caf50; // Highlight color on focus
+      }
+   }
+
+   .bordered-dateinput {
+      border: 1px solid gray;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-top: 4px;
+      padding-left: 12px !important;
+   }
+}
+
+.modal {
+   .modal-content {
+      .modal-body {
+
+         // Modal Styling
+         .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+
+            button {
+               background: #f0f0f0;
+               border: none;
+               padding: 0.5rem 1rem;
+               border-radius: 6px;
+               font-size: 1rem;
+               cursor: pointer;
+               transition: background-color 0.3s ease-in-out;
+
+               svg {
+                  color: green;
+               }
+
+               &:hover {
+                  background: #ddd;
+               }
+            }
+
+            .month-year {
+               font-size: 1.2rem;
+               font-weight: bold;
+               color: #333;
+            }
+         }
+
+         // Calendar header
+
+         // Calendar grid
+         .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 0.6rem !important;
+            text-align: center;
+
+            .day {
+               font-weight: bold;
+               color: #888;
+            }
+
+            .date {
+               padding: 0.6rem;
+               //  background: #ccc;
+               border-radius: 6px;
+               cursor: pointer;
+               transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+               &.disabled {
+                  // pointer-events: none;
+                  color: #aaa;
+                  position: relative;
+
+                  &::after {
+                     content: "_";
+                     position: absolute;
+                     left: 17px;
+                     height: 66px;
+                     font-size: 32px;
+                     top: -15px;
+                     font-weight: 200;
+                     color: orange;
+                  }
+               }
+
+               &:hover {
+                  background: #4caf50;
+                  color: white;
+               }
+
+               &.active {
+                  background: #4caf50;
+                  color: white;
+               }
+            }
+
+            .empty-cell {
+               visibility: hidden;
+            }
+         }
+
+         // Modal Footer
+         .modal-footer {
+            border-top: 1px solid #f0f0f0;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: flex-end;
+
+            .btn {
+               padding: 0.5rem 1rem;
+               border-radius: 6px;
+               background-color: #4caf50;
+               color: white;
+               border: none;
+               font-weight: bold;
+               cursor: pointer;
+               transition: background-color 0.3s ease-in-out;
+
+               &:hover {
+                  background-color: #45a049;
+               }
+
+               &:focus {
+                  outline: none;
+                  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.5);
+               }
+            }
+
+            .btn-secondary {
+               background-color: #f0f0f0;
+               color: #333;
+
+               &:hover {
+                  background-color: #ddd;
+               }
+            }
+         }
+
+         // Responsive Design
+         @media (max-width: 768px) {
+            .date-picker-dropdown {
+               padding: 0.5rem;
+            }
+
+            .calendar-header {
+               button {
+                  padding: 0.4rem 0.8rem;
+               }
+
+               .month-year {
+                  font-size: 1rem;
+               }
+            }
+
+            .calendar-grid {
+               gap: 0.3rem;
+
+               .date {
+                  padding: 0.4rem;
+               }
+            }
+
+            .modal-content {
+               padding: 1rem;
+            }
+         }
+
+         @media (max-width: 576px) {
+            .calendar-grid {
+               gap: 0.3rem;
+
+               .date {
+                  padding: 0.4rem;
+
+                  &.disabled {
+                     color: #aaa;
+                     position: relative;
+
+                     &::after {
+                        content: "_";
+                        position: absolute;
+                        left: 8px;
+                        height: 66px;
+                        font-size: 32px;
+                        top: -18px;
+                        font-weight: 200;
+                        color: orange;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
