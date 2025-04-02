@@ -1,0 +1,189 @@
+{
+  "status": 1,
+  "tour": {
+    "id": 59,
+    "title": "Tour test 1",
+    "slug": "tour-test-1",
+    "description": "<p>Test Test</p>",
+    "keywords": "Test",
+    "duration": null,
+    "price": 90,
+    "driver_id": null,
+    "short_description": "Test Test",
+    "resource_type": "2",
+    "created_at": "2025-02-13T15:36:20.000000Z",
+    "updated_at": "2025-02-13T15:36:20.000000Z",
+    "deleted_at": null,
+    "tour_type": null,
+    "states_id": null,
+    "city_id": 2,
+    "category_id": 1,
+    "tour_category": null,
+    "featured_image": null,
+    "sub_category_id": 16,
+    "highlights": "<p>Test Test</p>",
+    "meta_title": "Test Test",
+    "inclusions": "<p>Test Test</p>",
+    "exclusions": "<p>Test Test</p>",
+    "experience": "<p>Test Test</p>",
+    "sort_order": 200,
+    "sku": null,
+    "no_of_days": null,
+    "no_of_nights": null,
+    "min_pax": null,
+    "max_pax": null,
+    "tour_images": [
+      {
+        "id": 247,
+        "created_at": "2025-02-13T15:36:20.000000Z",
+        "updated_at": "2025-02-13T15:36:20.000000Z",
+        "tour_id": 59,
+        "image_url": "uploads/tours/2_67ae117434672.png",
+        "is_feature": 0,
+        "media_type": "1",
+        "alt_text": null
+      }
+    ],
+    "itineraries": [],
+    "packages": [
+      {
+        "id": 13,
+        "tour_id": 59,
+        "title": "Khorfakkan Tour Private",
+        "is_default": 1,
+        "inclusions": null,
+        "description": "<p>Khorfakkan Tour Private</p>",
+        "transport_option": 1,
+        "is_package_selected": null,
+        "with_private_transport": 0,
+        "created_at": "2025-03-28T09:58:37.000000Z",
+        "updated_at": "2025-03-28T09:58:37.000000Z",
+        "vehicles": [
+          {
+            "id": 43,
+            "min_pax": 35,
+            "max_pax": 51,
+            "category_id": 5,
+            "title": "50 Seater Bus",
+            "price": 1400
+          },
+          {
+            "id": 44,
+            "min_pax": 30,
+            "max_pax": 37,
+            "category_id": 5,
+            "title": "39 Seater Bus",
+            "price": 1200
+          },
+          {
+            "id": 45,
+            "min_pax": 21,
+            "max_pax": 33,
+            "category_id": 5,
+            "title": "35 Seater Bus",
+            "price": 1000
+          },
+          {
+            "id": 46,
+            "min_pax": 12,
+            "max_pax": 20,
+            "category_id": 5,
+            "title": "22 Seater Coaster Bus",
+            "price": 900
+          },
+          {
+            "id": 47,
+            "min_pax": 7,
+            "max_pax": 12,
+            "category_id": 5,
+            "title": "14 Seater Van",
+            "price": 700
+          },
+          {
+            "id": 48,
+            "min_pax": 7,
+            "max_pax": 12,
+            "category_id": 5,
+            "title": "12 Seater Van",
+            "price": 700
+          },
+          {
+            "id": 49,
+            "min_pax": 1,
+            "max_pax": 6,
+            "category_id": 5,
+            "title": "7 Seater Car",
+            "price": 600
+          }
+        ],
+        "time_slots": [
+          {
+            "id": 9,
+            "package_id": 13,
+            "start_time": "08:00",
+            "end_time": "20:00",
+            "time": "08:00-20:00",
+            "is_timeslot_selected": 1,
+            "is_prime": 1,
+            "created_at": "2025-03-28T09:59:03.000000Z",
+            "updated_at": "2025-04-02T06:48:08.000000Z",
+            "package_pricings": [
+              {
+                "id": 18,
+                "timeslot_id": 9,
+                "pax_type_id": 1,
+                "label": null,
+                "supplier_id": null,
+                "created_at": "2025-03-28T09:59:27.000000Z",
+                "updated_at": "2025-03-28T09:59:27.000000Z",
+                "base_price": "0.00",
+                "discount": "0.00",
+                "discounted_price": "0.00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "tour_id": 59,
+        "title": "Khorfakkan sharing tour",
+        "is_default": 2,
+        "inclusions": null,
+        "description": "<p>Khorfakkan sharing tour</p>",
+        "transport_option": 2,
+        "is_package_selected": null,
+        "with_private_transport": 0,
+        "created_at": "2025-04-02T06:47:20.000000Z",
+        "updated_at": "2025-04-02T06:49:47.000000Z",
+        "time_slots": [
+          {
+            "id": 11,
+            "package_id": 15,
+            "start_time": "08:00",
+            "end_time": "19:00",
+            "time": "08:00-19:00",
+            "is_timeslot_selected": 2,
+            "is_prime": 1,
+            "created_at": "2025-04-02T06:48:08.000000Z",
+            "updated_at": "2025-04-02T06:48:08.000000Z",
+            "package_pricings": [
+              {
+                "id": 21,
+                "timeslot_id": 11,
+                "pax_type_id": 1,
+                "label": null,
+                "supplier_id": null,
+                "created_at": "2025-04-02T06:48:37.000000Z",
+                "updated_at": "2025-04-02T06:48:37.000000Z",
+                "base_price": "120.00",
+                "discount": "0.00",
+                "discounted_price": "120.00"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

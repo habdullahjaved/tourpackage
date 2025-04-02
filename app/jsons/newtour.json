@@ -1,0 +1,128 @@
+{
+  "status": 1,
+  "tour": {
+    "id": 59,
+    "title": "Tour Test 1",
+    "slug": "tour-test-1",
+    "description": "Test Test",
+    "keywords": "Test",
+    "price": 90,
+    "city_id": 2,
+    "category_id": 1,
+    "sub_category_id": 16,
+    "featured_image": null,
+    "packages": [
+      {
+        "id": 13,
+        "title": "Khorfakkan Tour Private",
+        "is_default": 1,
+        "description": "Private Tour with Transport",
+        "transport_option": "Private",
+        "vehicles": [
+          {
+            "id": 43,
+            "title": "50 Seater Bus",
+            "min_pax": 35,
+            "max_pax": 51,
+            "base_price": 1400
+          },
+          {
+            "id": 49,
+            "title": "7 Seater Car",
+            "min_pax": 1,
+            "max_pax": 6,
+            "base_price": 600
+          }
+        ],
+        "time_slots": [
+          {
+            "id": 9,
+            "start_time": "08:00",
+            "end_time": "20:00",
+            "is_prime": 1,
+            "package_pricings": [
+              {
+                "id": 18,
+                "timeslot_id": 9,
+                "pax_type_id": 1,
+                "pax_type": "Adult",
+                "base_price": 100.0,
+                "discount": 10.0,
+                "discounted_price": 90.0,
+                "pricing_rules": [
+                  {
+                    "rule_id": 1,
+                    "rule_type": "season",
+                    "condition_value": "weekend",
+                    "multiplier": 1.2,
+                    "final_price": 108.0
+                  },
+                  {
+                    "rule_id": 2,
+                    "rule_type": "pax_type",
+                    "condition_value": "adult",
+                    "multiplier": 1.1,
+                    "final_price": 99.0
+                  }
+                ]
+              },
+              {
+                "id": 19,
+                "timeslot_id": 9,
+                "pax_type_id": 2,
+                "pax_type": "Child",
+                "base_price": 80.0,
+                "discount": 5.0,
+                "discounted_price": 75.0,
+                "pricing_rules": [
+                  {
+                    "rule_id": 1,
+                    "rule_type": "season",
+                    "condition_value": "weekend",
+                    "multiplier": 1.2,
+                    "final_price": 90.0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "title": "Khorfakkan Sharing Tour",
+        "is_default": 2,
+        "description": "Sharing Tour Option",
+        "transport_option": "Sharing",
+        "time_slots": [
+          {
+            "id": 11,
+            "start_time": "08:00",
+            "end_time": "19:00",
+            "is_prime": 1,
+            "package_pricings": [
+              {
+                "id": 21,
+                "timeslot_id": 11,
+                "pax_type_id": 1,
+                "pax_type": "Adult",
+                "base_price": 120.0,
+                "discount": 0.0,
+                "discounted_price": 120.0,
+                "pricing_rules": [
+                  {
+                    "rule_id": 3,
+                    "rule_type": "time_slot",
+                    "condition_value": "prime_time",
+                    "multiplier": 1.15,
+                    "final_price": 138.0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
