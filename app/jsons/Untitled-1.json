@@ -1,0 +1,194 @@
+{
+  "status": 1,
+  "tours": {
+    "current_page": 1,
+    "data": [
+      {
+        "id": 18,
+        "title": "Dubai City Tour Half Day",
+        "slug": "dubai-city-tour-half-day",
+        "description": "<p>Dubai, one of the seven emirates",
+        "keywords": "dubai city tour, dubai city tour half day, dubai sightseeing,",
+        "duration": 6,
+        "price": 90,
+        "driver_id": null,
+        "short_description": "Explore the vibrant city ",
+        "resource_type": "2",
+        "created_at": "2024-08-30T14:08:15.000000Z",
+        "updated_at": "2025-01-03T20:13:42.000000Z",
+        "deleted_at": null,
+        "tour_type": 2,
+        "states_id": 2,
+        "city_id": 2,
+        "category_id": 1,
+        "tour_category": 2,
+        "featured_image": "uploads/tours/Dubai City Tour_67780cb67c82f.png",
+        "sub_category_id": null,
+        "highlights": null,
+        "meta_title": "Dubai City Tour Half Day | Sightseeing Tour in Dubai",
+        "inclusions": null,
+        "exclusions": null,
+        "experience": null,
+        "sort_order": 1,
+        "sku": null,
+        "no_of_days": null,
+        "no_of_nights": null,
+
+        "category": {
+          "id": 1,
+          "title": "Activity",
+          "description": "This will be main categories for tours ans activities, tickets",
+          "slug": "activity",
+          "parent_id": null,
+          "category_type": null,
+          "status": 1,
+          "created_at": "2024-12-14T11:55:37.000000Z",
+          "updated_at": "2025-03-20T08:05:27.000000Z"
+        }
+      },
+      {
+        "id": 19,
+        "title": "Dubai City Tour Full Day",
+        "slug": "dubai-city-tour-full-day",
+        "description": "<p><strong>Burj Khalifa - The Tallest Building in</p>",
+        "keywords": "dubai city tour, dubai city tour full day, sightseeing tour,",
+        "duration": 8,
+        "price": 120,
+        "driver_id": null,
+        "short_description": "Experience the ultimate.",
+        "resource_type": "2",
+        "created_at": "2024-08-30T15:34:59.000000Z",
+        "updated_at": "2025-01-03T20:14:36.000000Z",
+        "deleted_at": null,
+        "tour_type": 2,
+        "states_id": 2,
+        "city_id": 2,
+        "category_id": 1,
+        "tour_category": 1,
+        "featured_image": "uploads/tours/burj-arlarab_67780cec67319.png",
+        "sub_category_id": null,
+        "highlights": null,
+        "meta_title": "Dubai City Tour Full Day | Sharing Basis",
+        "inclusions": null,
+        "exclusions": null,
+        "experience": null,
+        "sort_order": 2,
+        "sku": null,
+        "no_of_days": null,
+        "no_of_nights": null,
+
+        "category": {
+          "id": 1,
+          "title": "Activity",
+          "description": "This will be main categories for tours ans activities, tickets",
+          "slug": "activity",
+          "parent_id": null,
+          "category_type": null,
+          "status": 1,
+          "created_at": "2024-12-14T11:55:37.000000Z",
+          "updated_at": "2025-03-20T08:05:27.000000Z"
+        }
+      },
+      {
+        "id": 30,
+        "title": "Burj Khalifa Tour",
+        "slug": "burj-khalifa-tour",
+        "description": "<p><strong>Dubai,</strong> a city renowned </p>",
+        "keywords": "Burj khalifa tour, city tour Dubai, city sightseeing,Burj Khalifa Tour with tickets, burj khalifa tickets,",
+        "duration": 6,
+        "price": 200,
+        "driver_id": null,
+        "short_description": "Dubai is synonymous ",
+        "resource_type": "2",
+        "created_at": "2024-08-31T10:51:47.000000Z",
+        "updated_at": "2025-01-27T19:24:03.000000Z",
+        "deleted_at": null,
+        "tour_type": 2,
+        "states_id": 2,
+        "city_id": 2,
+        "category_id": 1,
+        "tour_category": 2,
+        "featured_image": "uploads/tours/1.png_66d2bd9b533d5.png",
+        "sub_category_id": null,
+        "highlights": "<p><strong>Spectacular Views</strong>: to music.</p>",
+        "meta_title": "Burj Khalifa Tickets and Tour",
+        "inclusions": "<p>Entry Ticket of Burj Khalifa</p>",
+        "exclusions": "<p>Food</p>",
+        "experience": "<p><strong>Unforgettable Views</strong>:</p>",
+        "sort_order": 3,
+        "sku": null,
+        "no_of_days": null,
+        "no_of_nights": null,
+
+        "category": {
+          "id": 1,
+          "title": "Activity",
+          "description": "This will be main categories for tours ans activities, tickets",
+          "slug": "activity",
+          "parent_id": null,
+          "category_type": null,
+          "status": 1,
+          "created_at": "2024-12-14T11:55:37.000000Z",
+          "updated_at": "2025-03-20T08:05:27.000000Z"
+        }
+      }
+    ],
+    "first_page_url": "http://localhost/toursafaq/backend/public/api/getTours?page=1",
+    "from": 1,
+    "last_page": 7,
+    "last_page_url": "http://localhost/toursafaq/backend/public/api/getTours?page=7",
+    "links": [
+      {
+        "url": null,
+        "label": "&laquo; Previous",
+        "active": false
+      },
+      {
+        "url": "http://localhost/toursafaq/backend/public/api/getTours?page=1",
+        "label": "1",
+        "active": true
+      },
+      {
+        "url": "http://localhost/toursafaq/backend/public/api/getTours?page=2",
+        "label": "2",
+        "active": false
+      },
+      {
+        "url": "http://localhost/toursafaq/backend/public/api/getTours?page=3",
+        "label": "3",
+        "active": false
+      },
+      {
+        "url": "http://localhost/toursafaq/backend/public/api/getTours?page=4",
+        "label": "4",
+        "active": false
+      },
+      {
+        "url": "http://localhost/toursafaq/backend/public/api/getTours?page=5",
+        "label": "5",
+        "active": false
+      },
+      {
+        "url": "http://localhost/toursafaq/backend/public/api/getTours?page=6",
+        "label": "6",
+        "active": false
+      },
+      {
+        "url": "http://localhost/toursafaq/backend/public/api/getTours?page=7",
+        "label": "7",
+        "active": false
+      },
+      {
+        "url": "http://localhost/toursafaq/backend/public/api/getTours?page=2",
+        "label": "Next &raquo;",
+        "active": false
+      }
+    ],
+    "next_page_url": "http://localhost/toursafaq/backend/public/api/getTours?page=2",
+    "path": "http://localhost/toursafaq/backend/public/api/getTours",
+    "per_page": 5,
+    "prev_page_url": null,
+    "to": 5,
+    "total": 34
+  }
+}

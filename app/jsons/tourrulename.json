@@ -45,7 +45,6 @@
         "transport_option": 1,
         "is_package_selected": null,
         "with_private_transport": 0,
-        "max_capacity": 51,
         "vehicles": [
           {
             "id": 43,
@@ -113,7 +112,6 @@
             "time": "08:00-20:00",
             "is_timeslot_selected": 1,
             "is_prime": 1,
-            "max_capacity": 20,
             "package_pricings": [
               {
                 "id": 18,
@@ -139,7 +137,7 @@
         "transport_option": 2,
         "is_package_selected": null,
         "with_private_transport": 0,
-        "max_capacity": 40,
+        "vehicles": [],
         "time_slots": [
           {
             "id": 11,
@@ -149,7 +147,6 @@
             "time": "08:00-19:00",
             "is_timeslot_selected": 2,
             "is_prime": 1,
-            "max_capacity": 40,
             "package_pricings": [
               {
                 "id": 21,
@@ -166,5 +163,31 @@
         ]
       }
     ]
-  }
+  },
+  "pricing_rules": [
+    {
+      "rule_name": "Summer Discount",
+      "rule_type": "percentage",
+      "discount_value": 15,
+      "discount_type": "percentage",
+      "start_date": "2025-06-01",
+      "end_date": "2025-08-31",
+      "min_pax": 5,
+      "max_pax": 20,
+      "transport_option": 1,
+      "valid_for_category": 1
+    },
+    {
+      "rule_name": "Early Bird Discount",
+      "rule_type": "fixed",
+      "discount_value": 50,
+      "discount_type": "fixed",
+      "start_date": "2025-01-01",
+      "end_date": "2025-03-31",
+      "min_pax": 1,
+      "max_pax": 50,
+      "transport_option": 2,
+      "valid_for_category": 2
+    }
+  ]
 }

@@ -1,0 +1,57 @@
+{
+  "status": 1,
+  "tour": {
+    "id": 1001,
+    "title": "Burj Khalifa Tickets",
+    "packages": [
+      {
+        "id": 201,
+        "title": "Standard Entry",
+        "time_slots": [
+          {
+            "id": 301,
+            "start_time": "14:00",
+            "end_time": "14:30",
+            "is_peak": 0
+          },
+          {
+            "id": 302,
+            "start_time": "15:00",
+            "end_time": "15:30",
+            "is_peak": 1,
+            "price_multiplier": 1.5
+          },
+          {
+            "id": 303,
+            "start_time": "16:00",
+            "end_time": "16:30",
+            "is_peak": 1,
+            "price_multiplier": 1.5
+          }
+        ],
+        "pricing_rules": [
+          {
+            "pax_type": "adult",
+            "base_price": 120.0,
+            "seasonal_adjustment": 20.0
+          },
+          {
+            "pax_type": "child",
+            "base_price": 80.0,
+            "seasonal_adjustment": 10.0
+          }
+        ]
+      }
+    ],
+    "coupon_codes": [
+      {
+        "code": "SUMMER10",
+        "discount_percentage": 10
+      },
+      {
+        "code": "NEWYEAR20",
+        "discount_percentage": 20
+      }
+    ]
+  }
+}

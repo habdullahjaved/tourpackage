@@ -1,3 +1,6 @@
+now i am gonna give you json of my tour architecture want to apply on this but currently i am not much sure about which rules should i apply i want to make it like make diffrent rules and apply on them 
+
+
 {
   "status": 1,
   "tour": {
@@ -168,3 +171,26 @@
     ]
   }
 }
+
+
+
+
+look pricing is in time_slots -> package_pricings 
+// and transport option is in packages -> transport_option
+// and vehicles are in packages -> vehicles
+// and time_slots is in packages -> time_slots
+// and package_pricings is in time_slots -> package_pricings
+// and package_pricings has base_price and discounted_price
+// and time_slots has is_prime
+// and packages has max_capacity
+1 let me explain you my architecture I have tours each tour has packages and each package has time slots and each time slot has package pricings 
+2 each package has transport option if transport_option is 1 it's private transport  if it's 2 it's sharing transport 
+3 if trnaport option is 1 then we have vehicles and each vehicle has min pax and max pax in this scenario only charge s for the vehicle price and keep empty package pricings  in this case for some tour we may reduce price like i have a mandir private tour on weekends only that price want to reduce that's price  
+4 if transport option is 2 then we have to charge for each pax and the price is in package_pricings
+5 if transport option is 1 and package_pricings also has pricing then we have to charge for the vehicle price and also charge for each pax this means it is  attraction ticket with transport 
+6 if time slot is_prime =1 it's price higher  
+
+
+
+above i have given you the architecture and the rules i want to apply on this
+so how i make rule engine for my architecture my backend is in laravel and frontend is in next js but now want to focus on backend 
