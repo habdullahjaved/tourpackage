@@ -74,3 +74,5 @@ const Page = async ({ searchParams }) => {
 
 export default Page;
 export const revalidate = 60;
+// https://medium.com/@devcorner/server-driven-ui-design-patterns-a-professional-guide-with-examples-a536c8f9965f
+// https://www.freecodecamp.org/news/what-is-server-driven-ui-design-patterns-and-why-should-you-use-it/

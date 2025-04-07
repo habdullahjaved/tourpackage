@@ -66,6 +66,16 @@
                 "base_price": "0.00",
                 "discount": "0.00",
                 "discounted_price": "0.00"
+              },
+              {
+                "id": 28,
+                "timeslot_id": 9,
+                "pax_type_id": 2,
+                "label": null,
+                "supplier_id": null,
+                "base_price": "0.00",
+                "discount": "0.00",
+                "discounted_price": "0.00"
               }
             ]
           }
@@ -102,6 +112,16 @@
                 "base_price": "120.00",
                 "discount": "0.00",
                 "discounted_price": "120.00"
+              },
+              {
+                "id": 22,
+                "timeslot_id": 11,
+                "pax_type_id": 2,
+                "label": null,
+                "supplier_id": null,
+                "base_price": "100.00",
+                "discount": "0.00",
+                "discounted_price": "100.00"
               }
             ]
           }
