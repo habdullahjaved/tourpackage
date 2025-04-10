@@ -23,17 +23,7 @@
     "no_of_nights": null,
     "min_pax": null,
     "max_pax": null,
-    "tour_images": [
-      {
-        "id": 247,
-        "tour_id": 59,
-        "image_url": "uploads/tours/2_67ae117434672.png",
-        "is_feature": 0,
-        "media_type": "1",
-        "alt_text": null
-      }
-    ],
-    "itineraries": [],
+
     "packages": [
       {
         "id": 13,
@@ -61,6 +51,16 @@
                 "id": 18,
                 "timeslot_id": 9,
                 "pax_type_id": 1,
+                "label": null,
+                "supplier_id": null,
+                "base_price": "0.00",
+                "discount": "0.00",
+                "discounted_price": "0.00"
+              },
+              {
+                "id": 19,
+                "timeslot_id": 9,
+                "pax_type_id": 2,
                 "label": null,
                 "supplier_id": null,
                 "base_price": "0.00",
@@ -97,6 +97,16 @@
                 "id": 21,
                 "timeslot_id": 11,
                 "pax_type_id": 1,
+                "label": null,
+                "supplier_id": null,
+                "base_price": "120.00",
+                "discount": "0.00",
+                "discounted_price": "120.00"
+              },
+              {
+                "id": 22,
+                "timeslot_id": 11,
+                "pax_type_id": 2,
                 "label": null,
                 "supplier_id": null,
                 "base_price": "120.00",
